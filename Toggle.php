@@ -79,6 +79,7 @@ class Toggle extends InputWidget
         //$this->clientOptions['animate'] = ArrayHelper::getValue($this->clientOptions, 'animate', true);
         //$options = Json::encode($this->clientOptions);
         //$js[] = "jQuery('$this->selector').bootstrapToggle($options);";
+        $js=[];
         if (!empty($this->clientEvents)) {
             foreach ($this->clientEvents as $event => $handler) {
                 $js[] = "jQuery('$this->selector').on('$event', $handler);";
