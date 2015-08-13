@@ -1,0 +1,26 @@
+{
+    "name": "loveorigami/yii2-bootstrap-toggle",
+    "description": "Yii2 bootstrap-toggle widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","bootstrap","toggle","widget"],
+    "license": "GPL-3.0+",
+    "authors": [
+		{
+            "name": "Andrey Lukyanov",
+            "email": "loveorigami@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "2.0.*",
+        "bower-asset/bootstrap-toggle": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "2.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lo\\widgets\\": ""
+        }
+    }
+}
