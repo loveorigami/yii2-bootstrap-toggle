@@ -89,10 +89,7 @@ class Toggle extends InputWidget
 
     public function run()
     {
-        $view = $this->getView();
-        CheckboxAsset::register($view);
-		
-		$this->options = ArrayHelper::merge($this->options, $this->woptions);
+        $this->options = ArrayHelper::merge($this->options, $this->woptions);
 
         if ($this->hasModel()) {
             $input = Html::activeCheckbox($this->model, $this->attribute, $this->options);
