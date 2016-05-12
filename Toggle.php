@@ -46,9 +46,10 @@ class Toggle extends InputWidget
      * @var array the default options for the widget.
      */
     protected $woptions = [
-		'data-toggle' => 'toggle',
-		'data-onstyle' => 'success',
-		'data-offstyle' => 'danger'
+	'data-toggle' => 'toggle',
+	'data-onstyle' => 'success',
+	'data-offstyle' => 'danger',
+	'label' => false,	
 	];
 	
     /**
@@ -90,7 +91,7 @@ class Toggle extends InputWidget
     public function run()
     {
 
-		$this->options = ArrayHelper::merge($this->woptions, $this->options);
+	$this->options = ArrayHelper::merge($this->woptions, $this->options);
 
         if ($this->hasModel()) {
             $input = Html::activeCheckbox($this->model, $this->attribute, $this->options);
