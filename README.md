@@ -45,7 +45,7 @@ or with active form as
 ```php
     <?= $form->field($model, 'status')->widget(Toggle::className(),
 		[
-			options =>[
+			'options' =>[
 				'id' => 'my-id',
 			]
 		]
